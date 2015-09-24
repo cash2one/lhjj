@@ -1,0 +1,175 @@
+{% extends "Html/base.html" %}
+{% block content %}
+  <!-- content start -->
+
+
+
+
+<div id="main">
+<div class="conent_zt">
+<div class="conent_xl">
+<div class="con_neri">
+<h1>整体厨柜系列</h1>
+<div class="con_jieshao"><p>整体橱柜系列，打造出真正适合中国人的健康橱柜系列，势必开创出一个整体橱柜系列的新纪元。</p></div>
+<div class="con_img"><img src="../../static/html/image/tu1.jpg"></div>
+</div>
+</div>
+<div class="conent_xl" style="background:none; margin-left:0px;">
+<div class="con_neri" style="float:right;">
+<h1>厨房电器系列</h1>
+<div class="con_jieshao"><p>集成环保灶的设计，带来更健康的功能组合，更舒适的使用体验。无论是政绩的综合性能，个性化整体厨房的适配性，还是日常的清洁维护，都拥有与众不同的卓越魅力。</p></div>
+<div class="con_img"><img src="../../static/html/image/tu2.jpg"></div>
+</div>
+</div>
+<div class="con1" style="margin-left:10px;">
+<div class="left_wen"><h1>欧卡罗品牌</h1>
+<div style="height:140px; overflow:hidden;">
+<p>欧卡罗（OKELO），一家致力于满足全球消费者整体厨房应用需求的企业，中国最大的整体橱柜生产企业之一。始创与1998年，基于13年锐意进取和极具前瞻性的全球战略目光，欧卡罗橱柜迅速发展成在华东地区产业链前后相关联度趋合的知名企业，的交易平台、用面挂钩，并被应邀成为国家标准的修编单位。</p></div>
+<div class="bottom_wh"><a>企业文化</a><a>品牌介绍</a></div>
+<div></div>
+</div>
+<div class="right_tu"><img src="../../static/html/image/fangzi.jpg"></div>
+</div>
+<div class="con1">
+<div class="left_wen"><h1>新闻资讯</h1>
+<div style="height:140px; overflow:hidden;">
+<ul>
+<li><a>【公司新闻】步入竞争红海，悉数橱柜市场促</a></li>
+<li><a>【行业资讯】欧卡罗原创精品 挑战山寨价格</a></li>
+<li><a>【行业资讯】欧卡罗膜压新品雅典娜知</a></li>
+<li><a>【公司新闻】创新品质 尽在出众实力</a></li>
+</ul>
+</div>
+<div class="bottom_wh"><a>公司新闻</a><a>行业新闻</a></div>
+
+</div>
+<div class="right_tu"><img src="../../static/html/image/she.jpg"></div>
+</div>
+<div style="clear:both;"></div>
+</div>
+<div class="con2">
+<div class="tittle_z"><a style="float:right; font-size:12px; margin-right:10px;">更多>></a>最新产品</div>
+<script type="text/javascript">
+//js无缝滚动代码
+function marquee(i, direction){
+	var obj = document.getElementById("marquee" + i);
+	var obj1 = document.getElementById("marquee" + i + "_1");
+	var obj2 = document.getElementById("marquee" + i + "_2");
+	if (direction == "up"){
+		if (obj2.offsetTop - obj.scrollTop <= 0){
+			obj.scrollTop -= (obj1.offsetHeight + 20);
+		}else{
+			var tmp = obj.scrollTop;
+			obj.scrollTop++;
+			if (obj.scrollTop == tmp){
+				obj.scrollTop = 1;
+			}
+		}
+	}else{
+		if (obj2.offsetWidth - obj.scrollLeft <= 0){
+			obj.scrollLeft -= obj1.offsetWidth;
+		}else{
+			obj.scrollLeft++;
+		}
+	}
+}
+
+function marqueeStart(i, direction){
+	var obj = document.getElementById("marquee" + i);
+	var obj1 = document.getElementById("marquee" + i + "_1");
+	var obj2 = document.getElementById("marquee" + i + "_2");
+
+	obj2.innerHTML = obj1.innerHTML;
+	var marqueeVar = window.setInterval("marquee("+ i +", '"+ direction +"')", 20);
+	obj.onmouseover = function(){
+		window.clearInterval(marqueeVar);
+	}
+	obj.onmouseout = function(){
+		marqueeVar = window.setInterval("marquee("+ i +", '"+ direction +"')", 20);
+	}
+}
+</script>
+<div class="warp_sp">
+<div id="marquee1" class="marqueeleft">
+	<div style="width:8000px;">
+		<ul id="marquee1_1">
+			<li>
+			<a class="pic" href="../../static/html/xiangxi.html"><img width="290" height="180" src="../../static/html/image/tu3.jpg"></a></li>
+			<li>
+			<a class="pic" href="../../static/html/xiangxi.html"><img width="290" height="180" src="../../static/html/image/tu3.jpg"></a></li>
+			<li>
+			<a class="pic" href="../../static/html/xiangxi.html"><img width="290" height="180" src="../../static/html/image/tu3.jpg"></a></li>
+			<li>
+			<a class="pic" href="../../static/html/xiangxi.html"><img width="290" height="180" src="../../static/html/image/tu3.jpg"></a></li>
+		</ul>
+		<ul id="marquee1_2"></ul>
+	</div>
+</div>
+</div>
+<script type="text/javascript">marqueeStart(1, "left");</script>
+</div>
+</div>
+<div style="clear:both;"></div>
+
+
+
+</div>
+
+
+<!--在线客服-->
+<div class="fixed_box" id="fixedBox">
+<div class="content_box">
+        <div class="content_inner">
+        	<div class="close_btn"><a title="关闭"><span>关闭</span></a></div>
+            <div class="content_title"><span>客服中心</span></div>
+            <div class="content_list">            	
+                <div class="qqserver">
+                    <p>                        
+                        <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=6031335&site=qq&menu=yes">
+                          <img border="0" src="http://wpa.qq.com/pa?p=2:6031335:41" alt="点击这里给我发消息" title="点击这里给我发消息">
+                          <span>方雨</span>
+                    	</a>
+                    </p>
+                    <p>
+                        <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=6031335&site=qq&menu=yes">
+                          <img border="0" src="http://wpa.qq.com/pa?p=2:6031335:41" alt="点击这里给我发消息" title="点击这里给我发消息">
+                          <span>方雨</span>
+                    	</a>
+                    </p>
+                    <p>
+                        <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=6031335&site=qq&menu=yes">
+                          <img border="0" src="http://wpa.qq.com/pa?p=2:6031335:41" alt="点击这里给我发消息" title="点击这里给我发消息">
+                          <span>方雨</span>
+                    	</a>
+                    </p>  
+                </div>               
+                <hr>
+                <div class="phoneserver">
+                    <h5>客户服务热线</h5>
+                    <p>请直接QQ联系！</p>
+                </div>
+                <hr>
+                <div class="msgserver">
+                    <p><a href="http://www.baidu.com/" target="_blank">给我们留言</a></p>
+                </div>
+            </div>
+            <div class="content_bottom"></div>
+        </div>
+    </div>
+   <div class="show_btn"><span>展开客服</span></div>
+   </div>
+<script type="text/javascript">
+$(document).ready(function(){
+$(".close_btn a").click(function(){
+	$(".content_box").hide();
+		$(".show_btn").show();
+		   });
+$(".show_btn").click(function(){
+	$(".show_btn").hide();
+		$(".content_box").show();
+		   });
+	   });
+</script>
+
+<!-- content end -->
+{% endblock %}
